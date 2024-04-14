@@ -1,0 +1,30 @@
+<div class="hero-video-container">
+  <video autoplay loop muted class="hero-video">
+    <source
+      [src]="videourl"
+      type="video/mp4"
+    />
+    Tu navegador no soporta la reproducción de videos.
+  </video>
+
+  <div class="hero-content">
+    <div class="container mx-auto text-center">
+      <h1
+        class="typing-demo text-3xl md:text-4xl lg:text-5xl font-bold text-white"
+      >
+        {{title}}
+      </h1>
+
+      <ngx-typed-js
+        [strings]="['Angular', 'React', 'Nodejs','Tailwindcss','Bootstrap','Material UI']"
+        [typeSpeed]="90"
+        [loop]="true"
+      >
+        <p class="mt-4 md:text-lg lg:text-2xl text-white font-bold">
+         {{subtitle}}
+          <span class="typing"></span>.
+        </p>
+      </ngx-typed-js>
+    </div>
+  </div>
+</div>
